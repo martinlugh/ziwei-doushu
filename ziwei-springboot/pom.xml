@@ -33,16 +33,15 @@
         </dependency>
 
         <!--
-          农历/公历转换：原项目用 lunar-javascript / lunar-lite。
-          Java 端建议使用同一作者 6tail 的孪生库 cn.6tail:lunar-java，以保证日历算法一致。
-          排盘引擎（ZiweiEngine，对应 iztro 的 lib/star/location.js）尚在移植中，
-          待引擎接入后再启用此依赖（请按 Maven 中央仓库的实际可用版本号填写）：
+          农历/公历转换：原项目用 lunar-javascript（作者 6tail）。
+          Java 端使用同一作者 6tail 的孪生库 cn.6tail:lunar（包名 com.nlf.calendar），
+          与 lunar-javascript 同源同算法，保证日历转换一致。
+        -->
         <dependency>
             <groupId>cn.6tail</groupId>
-            <artifactId>lunar-java</artifactId>
+            <artifactId>lunar</artifactId>
             <version>1.7.4</version>
         </dependency>
-        -->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
